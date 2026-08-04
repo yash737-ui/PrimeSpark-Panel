@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "declaration": false,
+    "noUncheckedIndexedAccess": true,
+    "baseUrl": ".",
+    "paths": {
+      "@powerspark/ui": ["packages/ui/src"],
+      "@powerspark/ui/*": ["packages/ui/src/*"],
+      "@powerspark/types": ["packages/types/src"],
+      "@powerspark/types/*": ["packages/types/src/*"],
+      "@powerspark/config/*": ["packages/config/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "build", ".next"]
+}
